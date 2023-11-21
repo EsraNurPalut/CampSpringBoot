@@ -9,8 +9,8 @@ import java.util.List;
 
 public interface BrandRepository extends JpaRepository<Brand,Integer> {
 
-    //List<Brand> getAll(); springjpa tüm işlemleri gerçekleştiriyor. Inmemory Gerek yok.
-}
+    //List<Brand> getAll(); springjpa(JPAReporsitory) tüm işlemleri gerçekleştiriyor. Inmemory Gerek yok.
+} //
 
 
 
