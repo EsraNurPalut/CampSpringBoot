@@ -1,18 +1,21 @@
 package kodlama.io.rentACar.entities.concretes;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+
+import javax.persistence.Entity;
 
 import javax.persistence.*;
+
 
 @Table(name="brands")
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor //prametresiz constructor üretir; No default constructor for entity.
 public class Brand {
+
+
     @Id //(primaryKey)
     @GeneratedValue(strategy = GenerationType.IDENTITY)  //auto +
     @Column(name="id")
@@ -20,5 +23,6 @@ public class Brand {
 
     @Column(name = "name")
     private String name;
+
 
 }
