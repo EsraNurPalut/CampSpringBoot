@@ -16,7 +16,7 @@ import javax.persistence.*;
 public class Brand {
 
 
-    @Id //(primaryKey)
+    @Id   //(primaryKey)
     @GeneratedValue(strategy = GenerationType.IDENTITY)  //auto +
     @Column(name="id")
     private int id;
