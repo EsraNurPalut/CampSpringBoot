@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreateBrandsRequest {
 
-    private int id; //default
+
     private String name;
 }

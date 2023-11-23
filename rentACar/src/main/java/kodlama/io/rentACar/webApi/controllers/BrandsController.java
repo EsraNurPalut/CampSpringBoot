@@ -5,6 +5,7 @@ import kodlama.io.rentACar.business.abstracts.BrandService;
 import kodlama.io.rentACar.business.requests.CreateBrandsRequest;
 import kodlama.io.rentACar.business.responses.GetAllBrandsResponse;
 import kodlama.io.rentACar.entities.concretes.Brand;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +15,8 @@ import java.util.List;
 
 @RestController //annotation(bilgilendirme)
 @RequestMapping("/api/brands")
+@AllArgsConstructor
 public class BrandsController {
-    public BrandsController(BrandService brandService) {
-        this.brandService = brandService;
-    }
 
     BrandService brandService;
 
